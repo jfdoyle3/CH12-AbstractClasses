@@ -1,4 +1,4 @@
-package com.careerdevs.animals;
+package com.company.animals;
 
 public abstract class Cat {
 

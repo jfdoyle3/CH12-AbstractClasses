@@ -1,6 +1,6 @@
-package com.careerdevs;
+package com.company;
 
-import com.careerdevs.vehicles.Car;
+import com.company.vehicles.Car;
 
 public class Main {
 

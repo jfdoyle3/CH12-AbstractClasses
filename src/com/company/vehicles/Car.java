@@ -1,4 +1,4 @@
-package com.careerdevs.vehicles;
+package com.company.vehicles;
 
 public class Car extends Vehicle {
 
@@ -14,6 +14,17 @@ public class Car extends Vehicle {
     public void horn() {
         System.out.println("Beep!");
     }
+
+    @Override
+    public void turnOn() {
+        isRunning=true;
+    }
+
+    @Override
+    public void turnOff() {
+        isRunning=false;
+    }
+
 
     @Override
     public String toString() {

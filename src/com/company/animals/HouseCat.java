@@ -1,6 +1,4 @@
-package com.careerdevs.animals;
-
-import com.careerdevs.animals.Cat;
+package com.company.animals;
 
 public class HouseCat extends Cat {
 

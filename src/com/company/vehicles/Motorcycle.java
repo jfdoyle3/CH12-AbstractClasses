@@ -1,4 +1,4 @@
-package com.careerdevs.vehicles;
+package com.company.vehicles;
 
 public class Motorcycle {
 }

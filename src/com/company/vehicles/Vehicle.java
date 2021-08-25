@@ -1,4 +1,4 @@
-package com.careerdevs.vehicles;
+package com.company.vehicles;
 
 public abstract class Vehicle extends Engine{
 
@@ -28,4 +28,6 @@ public abstract class Vehicle extends Engine{
     }
 
     public abstract void horn();
+    public abstract void turnOn();
+    public abstract void turnOff();
 }
