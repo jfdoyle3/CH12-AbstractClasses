@@ -10,7 +10,7 @@ public class Engine {
         this.isRunning = isRunning;
     }
 
-    private void flipSwitch(){
+    protected void flipSwitch(){
         boolean flip=isRunning ? true : false;
 
     }

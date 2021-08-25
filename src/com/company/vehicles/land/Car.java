@@ -1,4 +1,6 @@
-package com.company.vehicles;
+package com.company.vehicles.land;
+
+import com.company.vehicles.Vehicle;
 
 public class Car extends Vehicle {
 
@@ -17,12 +19,12 @@ public class Car extends Vehicle {
 
     @Override
     public void turnOn() {
-        isRunning=true;
+        flipSwitch();
     }
 
     @Override
     public void turnOff() {
-        isRunning=false;
+        flipSwitch();
     }
 
 

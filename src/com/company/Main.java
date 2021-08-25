@@ -1,6 +1,6 @@
 package com.company;
 
-import com.company.vehicles.Car;
+import com.company.vehicles.land.Car;
 
 public class Main {
 
