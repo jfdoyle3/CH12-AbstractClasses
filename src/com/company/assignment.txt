@@ -4,8 +4,8 @@ Completed:  Each Vehicle Class should contain one Engine
 
             Each Vehicle Class should contain methods to:
 Completed:  Start/Stop
-Add Passengers
-Remove Passengers
+Completed:  Add Passengers
+Completed:  Passengers
 
             Basic Requirements:
 Completed:  At least one Abstract Class

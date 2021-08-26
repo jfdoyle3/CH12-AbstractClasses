@@ -5,18 +5,27 @@ import java.util.List;
 
 public abstract class Vehicle extends Engine {
 
-    private String model;
-    private String brand;
-    private String manufacture;
-    private boolean isAutomatic;
-    private List<Passenger> passengers;
+    protected String model;
+    protected String brand;
+    protected String manufacture;
+    protected boolean isAutomatic;
+    protected int maxPassengers;
+    protected List<Passenger> passengers;
 
-    public Vehicle(int numberOfCyclinders, boolean isRunning, String model, String brand, String manufacture, int doors, boolean isAutomatic) {
-        super(numberOfCyclinders, isRunning);
+    public Vehicle(int numberOfCylinders,
+                   boolean isRunning,
+                   String model,
+                   String brand,
+                   String manufacture,
+                   int doors,
+                   boolean isAutomatic,
+                   int maxPassengers) {
+        super(numberOfCylinders, isRunning);
         this.model = model;
         this.brand = brand;
         this.manufacture = manufacture;
         this.isAutomatic = isAutomatic;
+        this.maxPassengers = maxPassengers;
         this.passengers = new ArrayList<>();
     }
 
@@ -44,10 +53,16 @@ public abstract class Vehicle extends Engine {
             System.out.println("Not Found");
             return;
         }
+        System.out.println(name + " found and removed from list");
         passengers.remove(found);
     }
 
+    public int getPassengersListSize() {
+        return passengers.size();
+    }
+
     public void displayPassengerList() {
+        System.out.println("Current List of Passengers:");
         for (Passenger passenger : passengers)
             System.out.println(passenger);
     }
@@ -59,7 +74,7 @@ public abstract class Vehicle extends Engine {
                 ", brand='" + brand + '\'' +
                 ", manufacture='" + manufacture + '\'' +
                 ", isAutomatic=" + isAutomatic +
-                super.numberOfCyclinders + super.isRunning +
+                super.numberOfCylinders + super.isRunning +
                 '}';
     }
 
