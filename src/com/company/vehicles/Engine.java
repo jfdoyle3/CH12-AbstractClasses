@@ -1,6 +1,6 @@
 package com.company.vehicles;
 
-public class Engine {
+public abstract class Engine {
 
     protected int numberOfCylinders;
     protected boolean isRunning;
@@ -10,7 +10,7 @@ public class Engine {
         this.isRunning = isRunning;
     }
 
-    private void flipSwitch(){
+    protected void flipSwitch(){
         boolean flip=isRunning ? true : false;
 
     }
